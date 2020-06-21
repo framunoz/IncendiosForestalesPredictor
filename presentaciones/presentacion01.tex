@@ -5,13 +5,28 @@
 \usetheme{Antibes}
 
 % Configuraciones generales
-\title{Predictor de incendios}
-\author{Francisco Muñoz}
-\date{\today}
+\title{Predictor de Incendios Forestales}
+\author{Francisco Muñoz G.}
+\institute{
+Facultad de Ciencias Físicas y Matemáticas\\
+Universidad de Chile
+}
+\date{22 de junio de 2020}
+\logo{\includegraphics[height=1.7cm]{presentaciones/img/logo solo ingenieria.jpg}}
 
 % Inicio del documento
 \begin{document}
+% Portada
 \frame{\titlepage}
+
+% Tabla de contenidos
+\AtBeginSection[]
+{
+\begin{frame}
+    \frametitle{Tabla de Contenidos}
+    \tableofcontents[currentsection]
+\end{frame}
+}
 \input{presentaciones/contenido01}
 
 
