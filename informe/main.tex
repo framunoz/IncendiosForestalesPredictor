@@ -1,0 +1,60 @@
+% Template:     Template Reporte LaTeX
+% Documento:    Archivo principal
+% Versión:      2.0.1 (28/06/2020)
+% Codificación: UTF-8
+%
+% Autor: Pablo Pizarro R.
+%        Facultad de Ciencias Físicas y Matemáticas
+%        Universidad de Chile
+%        pablo@ppizarror.com
+%
+% Sitio web:    [https://latex.ppizarror.com/reporte]
+% Licencia MIT: [https://opensource.org/licenses/MIT]
+
+% CREACIÓN DEL DOCUMENTO
+\documentclass[letterpaper,oneside]{article}
+
+% INFORMACIÓN DEL DOCUMENTO
+\def\titulodelreporte {Clasificador de Noticias Falsas}
+\def\temaatratar {Tema a tratar}
+\def\fechadelreporte {\today}
+
+\def\autordeldocumento {Fernando Fetis, Valentina Gómez, Jorge Hewstone y Francisco Muñoz}
+\def\nombredelcurso {Aprendizaje de Máquinas}
+\def\codigodelcurso {MA5204-1}
+
+\def\nombreuniversidad {Universidad de Chile}
+\def\nombrefacultad {Facultad de Ciencias Físicas y Matemáticas}
+\def\departamentouniversidad {Departamento de Ingeniería Matemática}
+\def\imagendepartamento {departamentos/dim}
+\def\localizacionuniversidad {Santiago, Chile}
+
+% IMPORTACIÓN DEL TEMPLATE
+\input{template}
+
+% INICIO DE PÁGINAS
+\begin{document}
+	
+% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
+\templatePagecfg
+
+% CONFIGURACIONES FINALES
+\templateFinalcfg
+
+% ======================= INICIO DEL DOCUMENTO =======================
+
+% Título y nombre del autor
+\inserttitle
+
+% Resumen o Abstract
+\begin{abstract}
+	\lipsum[11]
+\end{abstract}\vspace{0.1cm}\rule{\textwidth}{1pt}\vspace{0.2cm}
+
+\begin{multicols}{2}
+\input{example}
+\end{multicols}
+
+
+% FIN DEL DOCUMENTO
+\end{document}
