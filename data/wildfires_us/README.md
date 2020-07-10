@@ -41,7 +41,7 @@ OWNER_CODE | No | Code for primary owner or entity responsible for managing the 
 OWNER_DESCR | No | Name of primary owner or entity responsible for managing the land at the point of origin of the fire at the time of the incident.
 STATE | Si | Two-letter alphabetic code for the state in which the fire burned (or originated), based on the nominal designation in the fire report.
 COUNTY | Si | County, or equivalent, in which the fire burned (or originated), based on nominal designation in the fire report.
-FIPS_CODE | Si | Three-digit code from the Federal Information Process Standards (FIPS) publication 6-4 for representation of counties and equivalent entities.
+FIPS_CODE | No | Three-digit code from the Federal Information Process Standards (FIPS) publication 6-4 for representation of counties and equivalent entities.
 FIPS_NAME | Si | County name from the FIPS publication 6-4 for representation of counties and equivalent entities.
 
 ## Documentaciónd del dataset
