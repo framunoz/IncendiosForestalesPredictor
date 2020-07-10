@@ -4,6 +4,46 @@ Data obtenida de [kaggle](https://www.kaggle.com/rtatman/188-million-us-wildfire
 
 ## Tabla resumen
 
+Nombre columna | Importa? | Descripción
+-- | -- | --
+FOD_ID | No | Global unique identifier.
+FPA_ID | No | Unique identifier that contains information necessary to track back to the original record in the source dataset.
+SOURCE_SYSTEM_TYPE | No | Type of source database or system that the record was drawn from (federal, nonfederal, or interagency).
+SOURCE_SYSTEM | No | Name of or other identifier for source database or system that the record was drawn from. See Table 1 in Short (2014), or \Supplements\FPAFODsourcelist.pdf, for a list of sources and their identifier.
+NWC_GREPORTING_AGENCY | No | Active National Wildlife Coordinating Group (NWCG) Unit Identifier for the agency preparing the fire report (BIA = Bureau of Indian Affairs, BLM = Bureau of Land Management, BOR = Bureau of Reclamation, DOD = Department of Defense, DOE = Department of Energy, FS = Forest Service, FWS = Fish and Wildlife Service, IA = Interagency Organization, NPS = National Park Service, ST/C&L = State, County, or Local Organization, and TRIBE = Tribal Organization).
+NWCG_REPORTING_UNIT_ID | No | Active NWCG Unit Identifier for the unit preparing the fire report.
+NWCG_REPORTING_UNIT_NAME | No | Active NWCG Unit Name for the unit preparing the fire report.
+SOURCE_REPORTING_UNIT | No | Code for the agency unit preparing the fire report, based on code/name in the source dataset.
+SOURCE_REPORTING_UNIT_NAME | No | Name of reporting agency unit preparing the fire report, based on code/name in the source dataset.
+LOCAL_FIRE_REPORT_ID | No | Number or code that uniquely identifies an incident report for a particular reporting unit and a particular calendar year.
+LOCAL_INCIDENT_ID | No | Number or code that uniquely identifies an incident for a particular local fire management organization within a particular calendar year.
+FIRE_CODE | No | Code used within the interagency wildland fire community to track and compile cost information for emergency fire suppression (https://www.firecode.gov/).
+FIRE_NAME | No | Name of the incident, from the fire report (primary) or ICS-209 report (secondary).
+ICS_209_INCIDENT_NUMBER | No | Incident (event) identifier, from the ICS-209 report.
+ICS_209_NAME | No | Name of the incident, from the ICS-209 report.
+MTBS_ID | No | Incident identifier, from the MTBS perimeter dataset.
+MTBS_FIRE_NAME | No | Name of the incident, from the MTBS perimeter dataset.
+COMPLEX_NAME | No | Name of the complex under which the fire was ultimately managed, when discernible.
+FIRE_YEAR | Si | Calendar year in which the fire was discovered or confirmed to exist.
+DISCOVERY_DATE | Si | Date on which the fire was discovered or confirmed to exist.
+DISCOVERY_DOY | Si | Day of year on which the fire was discovered or confirmed to exist.
+DISCOVERY_TIME | Si | Time of day that the fire was discovered or confirmed to exist.
+STAT_CAUSE_CODE | No | Code for the (statistical) cause of the fire.
+STAT_CAUSE_DESCR | Si | Description of the (statistical) cause of the fire.
+CONT_DATE | Si | Date on which the fire was declared contained or otherwise controlled (mm/dd/yyyy where mm=month, dd=day, and yyyy=year).
+CONT_DOY | Si | Day of year on which the fire was declared contained or otherwise controlled.
+CONT_TIME | Si | Time of day that the fire was declared contained or otherwise controlled (hhmm where hh=hour, mm=minutes).
+FIRE_SIZE | Si | Estimate of acres within the final perimeter of the fire.
+FIRE_SIZE_CLASS | Si | Code for fire size based on the number of acres within the final fire perimeter expenditures (A=greater than 0 but less than or equal to 0.25 acres, B=0.26-9.9 acres, C=10.0-99.9 acres, D=100-299 acres, E=300 to 999 acres, F=1000 to 4999 acres, and G=5000+ acres).
+LATITUDE | Si | Latitude (NAD83) for point location of the fire (decimal degrees).
+LONGITUDE | Si | Longitude (NAD83) for point location of the fire (decimal degrees).
+OWNER_CODE | No | Code for primary owner or entity responsible for managing the land at the point of origin of the fire at the time of the incident.
+OWNER_DESCR | No | Name of primary owner or entity responsible for managing the land at the point of origin of the fire at the time of the incident.
+STATE | Si | Two-letter alphabetic code for the state in which the fire burned (or originated), based on the nominal designation in the fire report.
+COUNTY | Si | County, or equivalent, in which the fire burned (or originated), based on nominal designation in the fire report.
+FIPS_CODE | Si | Three-digit code from the Federal Information Process Standards (FIPS) publication 6-4 for representation of counties and equivalent entities.
+FIPS_NAME | Si | County name from the FIPS publication 6-4 for representation of counties and equivalent entities.
+
 ## Documentaciónd del dataset
 
 ### Context
